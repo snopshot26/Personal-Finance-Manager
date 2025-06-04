@@ -1,0 +1,32 @@
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager_MarkupCompile.cache
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.AssemblyInfoInputs.cache
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.AssemblyInfo.cs
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.csproj.CoreCompileInputs.cache
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.exe
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.deps.json
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.runtimeconfig.json
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.dll
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.pdb
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.dll
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\refint\Personal Finance Manager.dll
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.pdb
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.genruntimeconfig.cache
+C:\Users\nijat\source\repos\Personal Finance Manager\Personal Finance Manager\obj\Debug\net8.0-windows\ref\Personal Finance Manager.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.exe
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.deps.json
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.runtimeconfig.json
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Personal Finance Manager.pdb
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\App.g.cs
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager_MarkupCompile.cache
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.AssemblyInfoInputs.cache
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.AssemblyInfo.cs
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.csproj.CoreCompileInputs.cache
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\refint\Personal Finance Manager.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.pdb
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.genruntimeconfig.cache
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\ref\Personal Finance Manager.dll
