@@ -27,10 +27,10 @@ namespace Personal_Finance_Manager.ViewModel
             _navService = navService;
             _navService.OnViewModelChanged += vm => CurrentViewModel = vm;
 
-            NavigateLoginCommand = new RelayCommand(_ => _navService.NavigateTo<LoginViewModel>());
-            NavigateRegisterCommand = new RelayCommand(_ => _navService.NavigateTo<RegistrationViewModel>());
+            NavigateLoginCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<LoginViewModel>());
+            NavigateRegisterCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<RegistrationViewModel>());
 
-            _navService.NavigateTo<LoginViewModel>();
+            _ = _navService.NavigateToAsync<LoginViewModel>();
         }
     }
 }

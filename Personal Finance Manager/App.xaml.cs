@@ -1,4 +1,5 @@
 ﻿using Personal_Finance_Manager.Service;
+using Personal_Finance_Manager.Models;
 using Personal_Finance_Manager.View;
 using Personal_Finance_Manager.ViewModel;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,6 +40,9 @@ namespace Personal_Finance_Manager
 
             // Services
             services.AddSingleton<INavigationService, AppNavigationService>();
+            services.AddDbContext<FinanceContext>();
+            services.AddSingleton<IUserService, UserService>();
+            services.AddSingleton<IExpenseService, ExpenseService>();
         }
     }
 
