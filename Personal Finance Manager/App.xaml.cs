@@ -1,10 +1,12 @@
 ﻿using Personal_Finance_Manager.Service;
 using Personal_Finance_Manager.View;
 using Personal_Finance_Manager.ViewModel;
+using Microsoft.Extensions.DependencyInjection;
 using System.Configuration;
 using System.Data;
 using System.Net.NetworkInformation;
 using System.Windows;
+using System.Windows.Navigation;
 
 namespace Personal_Finance_Manager
 {
@@ -13,59 +15,30 @@ namespace Personal_Finance_Manager
     /// </summary>
     public partial class App : Application
     {
-        private static MainViewModel _mainViewModel;
-        private static LoginViewModel _loginViewModel;
-        private static RegistrationViewModel _registrationViewModel;
-
-        public static MainViewModel MainViewModel
-        {
-            get => _mainViewModel;
-            set => _mainViewModel = value;
-        }
-
-        public static LoginViewModel LoginViewModel
-        {
-            get => _loginViewModel;
-            set => _loginViewModel = value;
-        }
-
-        public static RegistrationViewModel RegistrationViewModel
-        {
-            get => _registrationViewModel;
-            set => _registrationViewModel = value;
-        }
-
-        private static IMessanger _messenger;
-        public static IMessanger Messenger
-        {
-            get => _messenger;
-            set => _messenger = value;
-        }
+        public static IServiceProvider Services { get; private set; }
 
         protected override void OnStartup(StartupEventArgs e)
         {
-            base.OnStartup(e);
+            var services = new ServiceCollection();
+            ConfigureServices(services);
+            Services = services.BuildServiceProvider();
 
-            Messenger = new Messanger();
-
-            // ViewModels initialization can be done here
-            MainViewModel = new MainViewModel(Messenger);
-            LoginViewModel = new LoginViewModel(Messenger);
-            RegistrationViewModel = new RegistrationViewModel(Messenger);
-
-            MainView mainView = new()
-            {
-                DataContext = MainViewModel
-            };
-            MainViewModel.CurrentViewModel = LoginViewModel;
-
-            mainView.ShowDialog();
+            var mainWindow = Services.GetRequiredService<MainView>();
+            mainWindow.Show();
         }
 
-        protected override void OnExit(ExitEventArgs e)
+        private void ConfigureServices(IServiceCollection services)
         {
-            // Clean up resources or save settings before exiting
-            base.OnExit(e);
+            // ViewModels
+            services.AddSingleton<MainViewModel>();
+            services.AddTransient<LoginViewModel>();
+            services.AddTransient<RegistrationViewModel>();
+
+            // Views
+            services.AddSingleton<MainView>();
+
+            // Services
+            services.AddSingleton<INavigationService, AppNavigationService>();
         }
     }
 

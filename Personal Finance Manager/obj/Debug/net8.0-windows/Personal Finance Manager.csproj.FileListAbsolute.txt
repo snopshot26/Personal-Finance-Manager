@@ -30,3 +30,16 @@ D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.
 D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.pdb
 D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.genruntimeconfig.cache
 D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\ref\Personal Finance Manager.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.csproj.AssemblyReference.cache
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\View\LoginView.g.cs
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\View\MainView.g.cs
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\View\RegistrationView.g.cs
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager_MarkupCompile.lref
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\View\LoginView.baml
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\View\MainView.baml
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\View\RegistrationView.baml
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.g.resources
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal Finance Manager.sourcelink.json
+D:\Projects\C#\Personal-Finance-Manager\Personal Finance Manager\obj\Debug\net8.0-windows\Personal.39C9672E.Up2Date

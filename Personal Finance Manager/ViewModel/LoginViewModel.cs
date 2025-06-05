@@ -10,12 +10,7 @@ namespace Personal_Finance_Manager.ViewModel
 {
     public class LoginViewModel : BaseViewModel
     {
-        public IMessanger Messenger { get; set; }
         
-        public LoginViewModel(IMessanger messenger)
-        {
-            this.Messenger = messenger;
-        }
             
     }
 }

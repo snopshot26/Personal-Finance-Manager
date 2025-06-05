@@ -9,17 +9,16 @@ using System.Threading.Tasks;
 
 namespace Personal_Finance_Manager.MVVM_tools
 {
-    public class BaseViewModel : INotifyPropertyChanged
+    public abstract class BaseViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        
-        protected void ChangeProperty<T>(out T prop, T value, [CallerMemberName] string propName ="")
+
+        protected bool SetProperty<T>(ref T field, T value, [CallerMemberName] string propertyName = null)
         {
-            prop = value;
-            PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
-            if (propertyChanged == null)
-                return;
-            propertyChanged((object) this, new PropertyChangedEventArgs(propName));
+            if (EqualityComparer<T>.Default.Equals(field, value)) return false;
+            field = value;
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+            return true;
         }
     }
 }
