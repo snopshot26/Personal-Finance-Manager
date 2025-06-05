@@ -6,7 +6,12 @@
              xmlns:local="clr-namespace:Personal_Finance_Manager.View"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBox Margin="0,0,0,10" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
+            <PasswordBox x:Name="PwdBox" Margin="0,0,0,10"/>
+            <Button Content="Register" Command="{Binding RegisterCommand}" CommandParameter="{Binding Password, ElementName=PwdBox}"/>
+            <Button Content="Back to Login" Margin="0,10,0,0" Command="{Binding NavigateLoginCommand}"/>
+        </StackPanel>
     </Grid>
 </UserControl>
