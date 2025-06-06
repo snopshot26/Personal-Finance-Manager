@@ -21,16 +21,18 @@ namespace Personal_Finance_Manager.ViewModel
 
         public ICommand NavigateLoginCommand { get; }
         public ICommand NavigateRegisterCommand { get; }
+        public ICommand NavigateBudgetCommand { get; }
 
         public MainViewModel(INavigationService navService)
         {
             _navService = navService;
             _navService.OnViewModelChanged += vm => CurrentViewModel = vm;
 
-            NavigateLoginCommand = new RelayCommand(_ => _navService.NavigateTo<LoginViewModel>());
-            NavigateRegisterCommand = new RelayCommand(_ => _navService.NavigateTo<RegistrationViewModel>());
+            NavigateLoginCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<LoginViewModel>());
+            NavigateRegisterCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<RegistrationViewModel>());
+            NavigateBudgetCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<BudgetViewModel>());
 
-            _navService.NavigateTo<LoginViewModel>();
+            _ = _navService.NavigateToAsync<LoginViewModel>();
         }
     }
 }
