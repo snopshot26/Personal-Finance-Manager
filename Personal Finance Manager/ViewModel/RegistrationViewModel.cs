@@ -31,8 +31,16 @@ namespace Personal_Finance_Manager.ViewModel
 
         private async Task RegisterAsync(string? password)
         {
-            await _userService.RegisterAsync(Username, password ?? string.Empty);
-            MessageBox.Show("Registration successful");
+            try
+            {
+                await _userService.RegisterAsync(Username, password ?? string.Empty);
+                MessageBox.Show("Registration successful");
+                await _navService.NavigateToAsync<LoginViewModel>();
+            }
+            catch (System.Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

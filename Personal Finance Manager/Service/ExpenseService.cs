@@ -1,4 +1,7 @@
 using Personal_Finance_Manager.Models;
+using Personal_Finance_Manager.Exceptions;
+using Microsoft.EntityFrameworkCore;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Personal_Finance_Manager.Service
@@ -15,6 +18,16 @@ namespace Personal_Finance_Manager.Service
 
         public async Task AddExpenseAsync(decimal amount, string category, string? description = null)
         {
+            if (amount <= 0)
+            {
+                throw new InvalidExpenseException("Amount must be greater than zero");
+            }
+
+            if (string.IsNullOrWhiteSpace(category))
+            {
+                throw new InvalidExpenseException("Category is required");
+            }
+
             var expense = new Expense
             {
                 Amount = amount,
@@ -25,6 +38,11 @@ namespace Personal_Finance_Manager.Service
 
             _context.Expenses.Add(expense);
             await _context.SaveChangesAsync();
+        }
+
+        public async Task<decimal> GetTotalAmountAsync()
+        {
+            return await _context.Expenses.SumAsync(e => e.Amount);
         }
     }
 }

@@ -6,7 +6,12 @@
         xmlns:local="clr-namespace:Personal_Finance_Manager.View"
         mc:Ignorable="d"
         Title="MainView" Height="450" Width="800">
-    <Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Login" Command="{Binding NavigateLoginCommand}" />
+            <MenuItem Header="Register" Command="{Binding NavigateRegisterCommand}" />
+            <MenuItem Header="Budget" Command="{Binding NavigateBudgetCommand}" />
+        </Menu>
         <ContentControl Content="{Binding CurrentViewModel}" />
-    </Grid>
+    </DockPanel>
 </Window>
