@@ -38,7 +38,6 @@
             <Setter Property="Margin" Value="0,0,0,10"/>
             <Setter Property="Padding" Value="8"/>
         </Style>
-
         <DataTemplate DataType="{x:Type vm:LoginViewModel}">
             <view:LoginView />
         </DataTemplate>
