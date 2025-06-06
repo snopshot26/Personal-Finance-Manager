@@ -1,4 +1,6 @@
 using Personal_Finance_Manager.MVVM_tools;
+
+using Personal_Finance_Manager.Service;
 using Personal_Finance_Manager.Strategy;
 using System.Threading.Tasks;
 

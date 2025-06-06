@@ -6,6 +6,15 @@
         mc:Ignorable="d"
         Title="Personal Finance Manager" Height="450" Width="800">
     <Grid>
-        <ContentControl Content="{Binding CurrentViewModel}" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#2E3B4E" Orientation="Vertical">
+            <Button Content="Login" Style="{StaticResource NavButtonStyle}" Command="{Binding NavigateLoginCommand}" Margin="10"/>
+            <Button Content="Register" Style="{StaticResource NavButtonStyle}" Command="{Binding NavigateRegisterCommand}" Margin="10"/>
+            <Button Content="Budget" Style="{StaticResource NavButtonStyle}" Command="{Binding NavigateBudgetCommand}" Margin="10"/>
+        </StackPanel>
+        <ContentControl Grid.Column="1" Content="{Binding CurrentViewModel}" />
     </Grid>
 </Window>
