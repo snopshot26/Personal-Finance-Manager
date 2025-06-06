@@ -9,7 +9,7 @@ namespace Personal_Finance_Manager.Service
 {
     public interface INavigationService
     {
-        void NavigateTo<TViewModel>() where TViewModel : BaseViewModel;
+        Task NavigateToAsync<TViewModel>(object? parameter = null) where TViewModel : BaseViewModel;
         event Action<BaseViewModel> OnViewModelChanged;
     }
 
