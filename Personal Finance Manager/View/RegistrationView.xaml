@@ -14,4 +14,5 @@
             <Button Content="Back to Login" Margin="0,10,0,0" Command="{Binding NavigateLoginCommand}"/>
         </StackPanel>
     </Border>
+
 </UserControl>
