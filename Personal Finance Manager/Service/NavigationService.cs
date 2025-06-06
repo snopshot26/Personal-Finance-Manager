@@ -18,9 +18,13 @@ namespace Personal_Finance_Manager.Service
             _provider = provider;
         }
 
-        public void NavigateTo<TViewModel>() where TViewModel : BaseViewModel
+        public async Task NavigateToAsync<TViewModel>(object? parameter = null) where TViewModel : BaseViewModel
         {
             var viewModel = _provider.GetRequiredService<TViewModel>();
+            if (viewModel is INavigationAware aware)
+            {
+                await aware.OnNavigatedToAsync(parameter);
+            }
             OnViewModelChanged?.Invoke(viewModel);
         }
     }
