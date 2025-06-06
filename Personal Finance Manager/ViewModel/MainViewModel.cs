@@ -21,6 +21,7 @@ namespace Personal_Finance_Manager.ViewModel
 
         public ICommand NavigateLoginCommand { get; }
         public ICommand NavigateRegisterCommand { get; }
+        public ICommand NavigateBudgetCommand { get; }
 
         public MainViewModel(INavigationService navService)
         {
@@ -29,6 +30,7 @@ namespace Personal_Finance_Manager.ViewModel
 
             NavigateLoginCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<LoginViewModel>());
             NavigateRegisterCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<RegistrationViewModel>());
+            NavigateBudgetCommand = new RelayCommand(async _ => await _navService.NavigateToAsync<BudgetViewModel>());
 
             _ = _navService.NavigateToAsync<LoginViewModel>();
         }

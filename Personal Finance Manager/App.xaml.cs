@@ -2,6 +2,7 @@
 using Personal_Finance_Manager.Models;
 using Personal_Finance_Manager.View;
 using Personal_Finance_Manager.ViewModel;
+using Personal_Finance_Manager.Strategy;
 using Microsoft.Extensions.DependencyInjection;
 using System.Configuration;
 using System.Data;
@@ -34,6 +35,7 @@ namespace Personal_Finance_Manager
             services.AddSingleton<MainViewModel>();
             services.AddTransient<LoginViewModel>();
             services.AddTransient<RegistrationViewModel>();
+            services.AddTransient<BudgetViewModel>();
 
             // Views
             services.AddSingleton<MainView>();
@@ -43,6 +45,7 @@ namespace Personal_Finance_Manager
             services.AddDbContext<FinanceContext>();
             services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<IExpenseService, ExpenseService>();
+            services.AddSingleton<IBudgetStrategy, TotalExpenseBudgetStrategy>();
         }
     }
 

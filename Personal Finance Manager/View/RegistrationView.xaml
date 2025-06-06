@@ -7,11 +7,15 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Margin="20">
-        <StackPanel>
-            <TextBox Margin="0,0,0,10" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
-            <PasswordBox x:Name="PwdBox" Margin="0,0,0,10"/>
-            <Button Content="Register" Command="{Binding RegisterCommand}" CommandParameter="{Binding Password, ElementName=PwdBox}"/>
-            <Button Content="Back to Login" Margin="0,10,0,0" Command="{Binding NavigateLoginCommand}"/>
-        </StackPanel>
+        <Border Padding="20" Background="WhiteSmoke" CornerRadius="5">
+            <StackPanel>
+                <TextBlock Text="Username"/>
+                <TextBox Margin="0,0,0,10" Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}"/>
+                <TextBlock Text="Password"/>
+                <PasswordBox x:Name="PwdBox" Margin="0,0,0,10"/>
+                <Button Content="Register" Margin="0,5" Command="{Binding RegisterCommand}" CommandParameter="{Binding Password, ElementName=PwdBox}"/>
+                <Button Content="Back to Login" Margin="0,10,0,0" Command="{Binding NavigateLoginCommand}"/>
+            </StackPanel>
+        </Border>
     </Grid>
 </UserControl>

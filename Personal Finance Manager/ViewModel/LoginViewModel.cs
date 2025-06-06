@@ -31,14 +31,15 @@ namespace Personal_Finance_Manager.ViewModel
 
         private async Task LoginAsync(string? password)
         {
-            var user = await _userService.AuthenticateAsync(Username, password ?? string.Empty);
-            if (user != null)
+            try
             {
+                await _userService.AuthenticateAsync(Username, password ?? string.Empty);
                 MessageBox.Show("Login successful");
+                await _navService.NavigateToAsync<BudgetViewModel>();
             }
-            else
+            catch (System.Exception ex)
             {
-                MessageBox.Show("Invalid credentials");
+                MessageBox.Show(ex.Message);
             }
         }
     }

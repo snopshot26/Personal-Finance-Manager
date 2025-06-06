@@ -11,5 +11,8 @@
         <DataTemplate DataType="{x:Type vm:RegistrationViewModel}">
             <view:RegistrationView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:BudgetViewModel}">
+            <view:BudgetView />
+        </DataTemplate>
     </Application.Resources>
 </Application>
